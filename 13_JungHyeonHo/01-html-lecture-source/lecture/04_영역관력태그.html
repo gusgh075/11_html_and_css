@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>04_영역 관련 태그</title>
+  <style>
+      .box {
+          border: 1px solid black;
+          width: 100px;
+          height: 100px;
+      }
+
+      .red {
+          background-color: red;
+      }
+
+      .yellow {
+          background-color: yellow;
+      }
+
+      .green {
+          background-color: green;
+      }
+  </style>
+</head>
+<body>
+  <h1>영역 관련 태그</h1>
+  <pre>
+    * block 요소
+      - 줄 바꿈이 적용되어 이미 존재하는 태그의 다음 줄에 영역 설정됨
+      - 화면을 수직 분할함(행이 쌓여 있는 모양)
+      - 너비/높이를 설정할 수 있다!
+      - block요소 태그 : div, p, pre, h1, form
+
+    * inline 요소
+      - 줄 바꿈이 적용되지 않아 옆으로 영역이 붙는 형식으로 설정됨
+      - 화면을 수평 분할함(한 줄에 글이 작성되는 모양)
+      - 너비/높이는 내부 내용(content)의 크기에 따라 결정된다.
+      - inline요소 태그 : span, strong, b, em, i, mark,
+                        sup, sub, addr, img, audio, video
+  </pre>
+
+  <h3>div태그(block 요소)</h3>
+  <div class="box red">첫 번째 영역</div>
+  <div class="box yellow">두 번째 영역</div>
+  <div class="box green">세 번째 영역</div>
+
+  <hr>
+  <h3>span태그(inline 요소)</h3>
+  <span class="box red">첫 번째 영역</span>
+  <span class="box yellow">두 번째 영역</span>
+  <span class="box green">세 번째 영역</span>
+
+  <hr>
+  <h3>block/inline 차이점 확인</h3>
+  <h5>block 요소</h5>
+  <div class="yellow">
+    왜들 그리 다운돼있어? 뭐가 문제야 say something
+    분위기가 겁나 싸해 요새는 이런 게 유행인가
+    왜들 그리 재미없어? 아 그건 나도 마찬가지
+    Tell me what I got to do 급한 대로 블루투스 켜
+    아무 노래나 일단 틀어 아무거나 신나는 걸로
+    아무렇게나 춤춰 아무렇지 않아 보이게
+    아무 생각 하기 싫어 아무개로 살래 잠시
+    I'm sick and tired of my every day, keep it up 한 곡 더
+    아무 노래나 일단 틀어 아무렴 어때 it's so boring
+    아무래도 refresh가 시급한 듯해 쌓여가 스트레스가
+    배꼽 빠질 만큼만 폭소하고 싶은 날이야
+    What up my dawgs? 어디야 너희 올 때 병맥주랑 까까 몇 개 사 와 uh
+    클럽은 구미가 잘 안 당겨 우리 집 거실로 빨랑 모여
+    외부인은 요령껏 차단 시켜 밤새 수다 떨 시간도 모자라
+    누군 힘들어 죽겠고 누군 축제 괜히 싱숭생숭 I want my youth back
+    좀 전까지 왁자지껄 하다 한 명 두 명씩 자릴 떠
+    왜들 그리 다운돼있어? 뭐가 문제야 say something
+    분위기가 겁나 싸해 요새는 이런 게 유행인가
+    왜들 그리 재미없어? 아 그건 나도 마찬가지
+    Tell me what I got to do 급한 대로 블루투스 켜
+    아무 노래나 일단 틀어 아무거나 신나는 걸로
+    아무렇게나 춤춰 아무렇지 않아 보이게
+    아무 생각 하기 싫어 아무개로 살래 잠시
+    I'm sick and tired of my every day, keep it up 한 곡 더
+    떠나질 못할 바엔
+    창밖은 쳐다도 안 봐
+    회까닥해서 추태를 부려도
+    No worries at all 이미지 왜 챙겨 그래 봤자 우리끼린데
+    Ooh 늦기 전에 막판 스퍼트 20대가 얼마 안 남았어
+    편한 옷으로 갈아입어 you look nice, get 'em high
+    얼핏 보면 그냥 코미디 이렇게 무해한 파티 처음이지?
+    만감이 교차하는 새벽 2시경 술잔과 감정이 소용돌이쳐
+    왜들 그리 다운돼있어? 뭐가 문제야 say something
+    분위기가 겁나 싸해 요새는 이런 게 유행인가
+    왜들 그리 재미없어? 아 그건 나도 마찬가지
+    Tell me what I got to do 급한 대로 블루투스 켜
+    아무 노래나 일단 틀어 아무거나 신나는 걸로
+    아무렇게나 춤춰 아무렇지 않아 보이게
+    아무 생각 하기 싫어 아무개로 살래 잠시
+    I'm sick and tired of my every day, keep it up 한 곡 더
+    아무 노래나 일단
+    La-la-la, la-la-la, la-la-la-la
+    La-la-la, la-la-la, la-la-la-la (You ain't gonna get a day like this)
+    아무 노래 아무 노래 아무 노래나 틀어봐
+    아무 노래 아무 노래 아무 노래나 틀어봐 (Yeah)
+    아무 노래 (ooh) 아무 노래 아무 노래나 틀어봐
+    아무 노래 아무 노래 아무 노래나 KOZ
+  </div> <!-- 이거 안 닫으면 넘어넘침-->
+  <h5>inline 요소</h5>
+  <span class="green">
+왜들 그리 다운돼있어? 뭐가 문제야 say something
+분위기가 겁나 싸해 요새는 이런 게 유행인가
+왜들 그리 재미없어? 아 그건 나도 마찬가지
+Tell me what I got to do 급한 대로 블루투스 켜
+아무 노래나 일단 틀어 아무거나 신나는 걸로
+아무렇게나 춤춰 아무렇지 않아 보이게
+아무 생각 하기 싫어 아무개로 살래 잠시
+I'm sick and tired of my every day, keep it up 한 곡 더
+아무 노래나 일단 틀어 아무렴 어때 it's so boring
+아무래도 refresh가 시급한 듯해 쌓여가 스트레스가
+배꼽 빠질 만큼만 폭소하고 싶은 날이야
+What up my dawgs? 어디야 너희 올 때 병맥주랑 까까 몇 개 사 와 uh
+클럽은 구미가 잘 안 당겨 우리 집 거실로 빨랑 모여
+외부인은 요령껏 차단 시켜 밤새 수다 떨 시간도 모자라
+누군 힘들어 죽겠고 누군 축제 괜히 싱숭생숭 I want my youth back
+좀 전까지 왁자지껄 하다 한 명 두 명씩 자릴 떠
+왜들 그리 다운돼있어? 뭐가 문제야 say something
+분위기가 겁나 싸해 요새는 이런 게 유행인가
+왜들 그리 재미없어? 아 그건 나도 마찬가지
+Tell me what I got to do 급한 대로 블루투스 켜
+아무 노래나 일단 틀어 아무거나 신나는 걸로
+아무렇게나 춤춰 아무렇지 않아 보이게
+아무 생각 하기 싫어 아무개로 살래 잠시
+I'm sick and tired of my every day, keep it up 한 곡 더
+떠나질 못할 바엔
+창밖은 쳐다도 안 봐
+회까닥해서 추태를 부려도
+No worries at all 이미지 왜 챙겨 그래 봤자 우리끼린데
+Ooh 늦기 전에 막판 스퍼트 20대가 얼마 안 남았어
+편한 옷으로 갈아입어 you look nice, get 'em high
+얼핏 보면 그냥 코미디 이렇게 무해한 파티 처음이지?
+만감이 교차하는 새벽 2시경 술잔과 감정이 소용돌이쳐
+왜들 그리 다운돼있어? 뭐가 문제야 say something
+분위기가 겁나 싸해 요새는 이런 게 유행인가
+왜들 그리 재미없어? 아 그건 나도 마찬가지
+Tell me what I got to do 급한 대로 블루투스 켜
+아무 노래나 일단 틀어 아무거나 신나는 걸로
+아무렇게나 춤춰 아무렇지 않아 보이게
+아무 생각 하기 싫어 아무개로 살래 잠시
+I'm sick and tired of my every day, keep it up 한 곡 더
+아무 노래나 일단
+La-la-la, la-la-la, la-la-la-la
+La-la-la, la-la-la, la-la-la-la (You ain't gonna get a day like this)
+아무 노래 아무 노래 아무 노래나 틀어봐
+아무 노래 아무 노래 아무 노래나 틀어봐 (Yeah)
+아무 노래 (ooh) 아무 노래 아무 노래나 틀어봐
+아무 노래 아무 노래 아무 노래나 KOZ
+  </span>
+</body>
+</html>

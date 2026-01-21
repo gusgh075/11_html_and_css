@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>03_선택자-3</title>
+  <link rel="stylesheet" href="../css/03_선택자-3.css">
+</head>
+<body>
+  <h1>일반 구조 선택자</h1>
+  <pre>
+    - 위치 먼저 보고 비교
+      ex) last-child에서 마지막요소가 p인지 선택함
+    - 특정한 위치에 있는 요소를 선택(위치로 구분)
+      -> "선택한 위치의 요소가 선택자와 맞는가" 해석
+  </pre>
+
+  <div id="test1">
+    <p>테스트1</p>
+    <p>테스트2</p>
+    <p>테스트3</p>
+    <p>테스트4</p>
+    <p>테스트5</p>
+    <pre>테스트6</pre>
+  </div>
+
+  <hr>
+  <h1>형태 구조 선택자</h1>
+  <pre>
+    - 요소 먼저 보고 비교
+      ex) last-of-type에서 p 요소중 마지막을 선택함
+    - 특정한 위치에 있는 요소를 선택(형태로 구분)
+      -> 선택된 요소를 기준으로 위치 구분
+  </pre>
+  <div id="test2">
+    <p>테스트1</p>
+    <p>테스트2</p>
+    <p>테스트3</p>
+    <p>테스트4</p>
+    <p>테스트5</p>
+    <pre>테스트6</pre>
+  </div>
+
+  <hr>
+  <h1>부정 선택자(:not)</h1>
+  <pre>
+    <strong>item중 3, 6, 9를 빼고 선택하려면 어떻게 해야될까?</strong>
+  </pre>
+  <ul id="test3">
+    <li>item1</li>
+    <li>item2</li>
+    <li>item3</li>
+    <li>item4</li>
+    <li>item5</li>
+    <li>item6</li>
+    <li>item7</li>
+    <li>item8</li>
+    <li>item9</li>
+    <li>item10</li>
+  </ul>
+  <hr>
+  <h1>문자 선택자</h1>
+  <pre>
+    태그 내부에서 특정 조건의 문자를 선택하는 선택자
+  </pre>
+
+  <div id="test4">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae cupiditate maiores maxime nemo
+      perferendis totam vel. Commodi consectetur, consequuntur cupiditate debitis enim nam quae ullam. Animi distinctio
+      placeat temporibus!
+    </p>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium beatae cupiditate maiores maxime nemo
+      perferendis totam vel. Commodi consectetur, consequuntur cupiditate debitis enim nam quae ullam. Animi distinctio
+      placeat temporibus!
+    </p>
+  </div>
+</body>
+</html>
